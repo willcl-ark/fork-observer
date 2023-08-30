@@ -29,5 +29,11 @@ base64 = "0.13.1"
 async-trait = "0.1.58"
 
 [features]
-
 strict = [] # Treat warnings as a build error.
+
+[source.crates-io]
+replace-with = "vendored-sources"
+
+[source.vendored-sources]
+directory = "vendor"
+
